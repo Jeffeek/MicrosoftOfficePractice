@@ -109,9 +109,15 @@ namespace MicrosoftOfficePractice
             Range range = (Range)WorkSheet.Range[WorkSheet.Cells[startI, startJ], WorkSheet.Cells[finishI, finishJ]];
             var temp = range.Value2;
             string[,] ret = new string[finishI - startI + 1, finishJ - startJ + 1];
+<<<<<<< HEAD
             for (int i = 1; i <= finishI - startI; i++)
             {
                 for (int j = 1; j <= finishJ - startJ; j++)
+=======
+            for (int i = 1; i <= finishI - startI + 1; i++)
+            {
+                for (int j = 1; j <= finishJ - startJ + 1; j++)
+>>>>>>> 3c15c14f3cf824db8208d6004d2e0152db2a686f
                 {
                     if (temp[i, j] == null)
                     {
